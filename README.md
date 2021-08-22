@@ -6,7 +6,7 @@ Project was originally 'completed' sometime in May of 2021 but was revamped a fe
 
 Also please note that if official page looks different compared to my replica at the time of viewing, please note that Costco occasionally updates the official page with new updates. Replica was intended to be that of the exact design of the official page at the time of original creation.
 
-*Will have plans of later adding the JavaScript to make this page interactive. All functionalities will be as what already exists on the official page (again, see link on line 1). 
+*Will have plans of later adding the JavaScript to make this page interactive. All functionalities will be as what already exists on the official page (again, see link above). 
 
 *Also might be cool to recreate https://www.costco.com/ (the main site) with responsiveness and JavaScript interactivity just for fun. Will see how I feel.
 
