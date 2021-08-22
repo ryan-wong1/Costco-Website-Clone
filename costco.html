@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Costco Wholesale</title>
+    <link href='costco.css' rel='stylesheet' type='text/css'>
+    <link href ='media_costco.css' rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+</head>
+<body>
+<!--coronavirus warning-->
+    <div class='covid-container'>
+        <p>Learn more about important <u>COVID</u> updates and Special Hours</p>
+    </div>
+
+<!--nav bar (while supplies last, first row)-->
+    <div class='nav1-container'>
+        <ul class='nav1-items'>
+            <li class='nav1-item'>While Supplies Last</li>
+            <li class='nav1-item'>Treasure Hunt</li>
+            <li class='nav1-item'>What's New</li>
+            <li class='nav1-item'>Online-Only</li>
+            <li class='nav1-item'>Warehouse Savings</li>
+            <li class='nav1-item'>Find a Warehouse</li>
+            <li class='nav1-item'>Get Email Offers</li>
+            <li class='nav1-item'>Customer Service</li>
+            <li class='nav1-item'>US</li>
+        </ul>
+    </div>
+
+<!--nav LOGO, SEARCH BAR, SIGN IN, etc (second row)-->
+    <div class='nav-2ndRow-container'>
+        <!--LOGO*-->
+        <div class='nav-2ndRow-logo'>
+            <img class='costco-logo' src='Costco-logo.png'>
+        </div>
+        <!--SEARCH BAR-->
+        <div class='nav-2ndRow-search'>
+            <input type='text' class='nav-search-input' placeholder='Search'>
+            <div class='nav-search-icon'>
+                <ion-icon name="search-outline"></ion-icon>
+            </div>
+        </div>
+        <!--SIGN IN, ORDER & RETURN, CART container-->
+        <div class='nav-2ndRow-signin'>
+            <div>
+                <a href='#'>Sign In / Register</a>
+            </div>
+            <div class='nav-search-orders'>
+                <a href='#'>Orders & Returns</a>
+            </div>
+            <div class='nav-cart'>
+                <ion-icon name="cart"></ion-icon>
+                <a href='#'>Cart</a>
+            </div>
+        </div>
+    </div>
+
+<!--HIDDEN nav LOGO, SEARCH BAR, SIGN IN, etc (second row)-->
+    <div class='nav-2ndRow-container-hidden'>
+       <div class='nav-2ndRow1-hidden'>
+            <div class='nav-logo-hidden'>
+                <img src='Costco-logo.png'>
+            </div>
+       </div>
+
+       <div class='nav-2ndRow2-hidden'>
+            <div class='nav-shop-hidden'>
+                <ion-icon name="menu"></ion-icon><p>Shop</p>
+            </div>
+            <div class='nav-search-container-hidden'>
+                <div class='nav-search-hidden'>
+                    <input type='text' placeholder='Search'>
+                </div>
+                <div class='nav-icon-hidden'>
+                    <ion-icon name="search"></ion-icon>
+                </div>
+            </div>
+       </div>
+    </div>
+
+<!--Navbar blue, shop all departments...-->
+    <div class='navbar-blue-container'>
+        <ul class='navbar-blue-items'>
+            <div class='navbar-blue-dropdown'>
+                <ion-icon name="reorder-three-outline"></ion-icon>
+                <li>Shop All Departments</li>
+            </div>
+            <li class='navbar-blue-item'>Grocery</li>
+            <li class='navbar-blue-item'>Business Delivery</li>
+            <li class='navbar-blue-item'>Optical</li>
+            <li class='navbar-blue-item'>Pharmacy</li>
+            <li class='navbar-blue-item'>Services</li>
+            <li class='navbar-blue-item'>Photo</li>
+            <li class='navbar-blue-item'>Travel</li>
+            <li class='navbar-blue-item'>Membership</li>
+            <li class='navbar-blue-item'>Locations</li>
+        </ul>
+    </div>
+
+<!--Welcome to the costco employee website-->
+    <section class='welcome-container'> 
+        <p class='welcome-text'>Home / Employee Website</p>
+        <div class='welcome-chris'>
+            <img src='Chris.png'>
+            <p class='welcome-chris-text'>Welcome to the<br> Costco Employee Website</p>
+        </div>
+    </section>
+
+<!--Main-->
+    <section class='main-container'>
+
+        <!--Main first FIRST (employee self-service column)-->
+        <div class='main-firstHalf'>
+
+            <div class='main-firsthalf-background'>
+
+                <!--Employee self service-->
+                <div class='employee-container'>
+                    <h1 class='main-container-title'>Employee Self-Service</h1>
+                    <div class='employee-info-container'>
+                        <p class='employee-login'>Current Employee Login</p>
+                        <p class='employee-new'>New Employees:<br> <a href='#'>Register here</a></p>
+                        <p class='employee-former'><a href='#'>Former Employee Login</a></p>
+                        <p class='employee-ESS'>In order to access ESS, former employees (alumni) must <a href='#'>re-register</a> for MyCostco Account. Former employees have access to ESS for 25 months after separation date.</p>
+                        <p class='employee-loginIssues'>Login Issues: <a href='#'>Retrieve Username</a> | <a href='#'>Reset Password</a></p>
+                        <p class='employee-notice'><i>To access Employee Self-Service from outside the Costco network, employees must use the Google Chrome browser. This includes using the Chrome browser app on a mobile device.</i></p>
+                    </div>
+                </div>
+
+                <!--pay card & historical ePayroll-->
+                <div class='payCard-container'>
+                    <div class='payCard-1'>
+                        <h1 class='main-container-title'>Pay Card</h1>
+                        <p class='payCard-text'>Provides access to your Costco pay card.</p>
+                    </div>
+                    <div class='payCard-2'>
+                        <h1 class='main-container-title'>Historical ePayroll</h1>
+                        <p class='payCard-text'>Provides access to pay stubs, tax status, vacation/sick balances and W−2s prior to October 3, 2014.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!--benefits-->
+            <div class='benefits-container'>
+                <h1 class='main-container-title'>Benefits</h1>
+                <p class='benefits-text'>Everything you need to know about your Costco Employee Benefits including healthcare, retirement and much more.</p>
+            </div>
+
+            <!--SAP-->
+            <div class='SAP-container'>
+                <h1 class='main-container-title'>SAP Success Factors</h1>
+                <p class='SAP-text'>Access the SuccessFactors <strong>Online Review system</strong> for Supervisor and Manager Performance Reviews.<br><br>
+                Non-exempt employees are not expected or permitted to perform any work outside of work hours (“off the clock”) without prior permission from management. If you do work off the clock, you must record all time worked on the Exception Log and notify your manager.</p>
+            </div>
+        </div>
+
+        <!--Main SECOND half (costco today column)-->
+        <div class='main-secondHalf'>
+
+            <!--costco today-->
+            <div class='costcoToday-container'>
+                <h1 class='main-container-title'>Costco Today</h1>
+                <div class='costcoToday-info'>
+                    <div>
+                        <img src='Costco-today.jpeg' class='costcoToday-pic'>
+                    </div>
+                    <div>
+                        <p class='costcoToday-text'>Join the Conversation<br>Connect with Costco Today, your employee magazine. Get the latest news from around the company and chat with other employees<p>
+                    </div>
+                </div>
+            </div>
+
+            <!--employee job bank & journeys-->
+            <div class='jobBank-journeys-container'>
+
+                <!--employee job bank-->
+                <div class='jobBank-container'>
+                    <h1 class='main-container-title'>Employee Job Bank</h1>
+                    <p>Sign in to the Employee Job Bank to see currently open internal job postings.</p>
+                </div>
+
+                <!--Journeys-->
+                <div class='journeys-container'>
+                    <h1 class='main-container-title'>Journeys</h1>
+                    <p>To continue to help the women at Costco network and exchange information, develop professionally, and create a healthier life.</p>
+                </div>
+            </div>
+
+            <!--Whistleblower policy-->
+            <div class='whistleblower'>
+                <h1 class='main-container-title'>Whistleblower policy</h1>
+                <p class='whistleblower-text'><strong>Confidential Employee Complaints and Inquiries</strong></p>
+                <br>
+                <p class='whistleblower-text'>
+                Learn how to access Costco's channels for confidential reporting of employee concerns about accounting issues or illegal conduct.</p>
+            </div>
+        </div>
+    </section>
+
+<!--FOOTER-->
+
+    <!--Footer row one-->
+    <section class='footer-one'>
+        <div class='footer-one-container'>
+            <div class='footer-one-section footer-one-1'>
+                <h4 class='footer-one-title'>Customer Service</h4>
+                <div class='help-circle-container'>
+                    <ion-icon name="help-circle"></ion-icon>
+                    <p>Get Help Or Contact Us</p>
+                </div>
+            </div>
+            <div class='footer-one-section footer-one-2'>
+                <h4 class='footer-one-title'>Find a Warehouse</h4>
+                <div class='findWarehouse'>
+                    <input type='text' placeholder='Enter your email'>
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+            </div>
+            <div class='footer-one-section footer-one-3'>
+                <h4 class='footer-one-title'>Get Email Offers</h4>
+                <div class='emailOffers'>
+                    <div class='emailOffers1'>
+                        <input type='text' placeholder='Enter your email'>
+                    </div>
+                    <div class='emailOffers2'>
+                        <p>Go</p>
+                    </div>
+                </div>
+            </div>
+            <div class='footer-one-section footer-one-4'>                
+                <h4 class='footer-one-title'>Follow Us</h4>
+                <div class='socialMediaIcons'>
+                    <ion-icon name="logo-facebook" class='facebookIcon'></ion-icon>
+                    <ion-icon name="logo-pinterest" class='pinterestIcon'></ion-icon>
+                    <ion-icon name="logo-instagram" class='instagramIcon'></ion-icon>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer row one HIDDEN-->
+    <section class='footer-one-hidden'>
+        <div class='footer-one-container-hidden'>
+            <h4 class='footer-one-title-hidden'>Get Email Offers</h4>
+            <div class='footer-one-input-hidden'>
+                <div class='footer-one-input1-hidden'>
+                    <input type='text' placeholder='Enter your email'>
+                </div>
+                <div class='footer-one-input2-hidden'>
+                    <p>Go</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Footer row two-->
+    <section class='footer-two'>
+        <section class='footer-two-container'>
+            <div class='footer-two-section footer-two-section1'>
+                <h4 class='footer-two-title'>About Us</h4>
+                <ul class='footer-two-items'>
+                    <li class='footer-two-item'>Charitable Contributions</li>
+                    <li class='footer-two-item'>Company Information</li>
+                    <li class='footer-two-item'>Sustainability Commitment</li>
+                    <li class='footer-two-item'>Investor Relations</li>
+                    <li class='footer-two-item'>Jobs</li>
+                    <li class='footer-two-item'>Kirkland Signature</li>
+                    <li class='footer-two-item'>Logo and Media Requests</li>
+                    <li class='footer-two-item'>Product Videos</li>
+                    <li class='footer-two-item'>The Costco Connection</li>
+                    <li class='footer-two-item'>Quick & Easy Recipe Videos</li>
+                    <li class='footer-two-item'>Costco Blog</li>
+                    <li class='footer-two-item'>Employee Site</li>
+                </ul>
+            </div>
+            <div class='footer-two-section'>
+                <h4 class='footer-two-title'>Membership</h4>
+                <ul class='footer-two-items'>
+                    <li class='footer-two-item'>Join Now</li>
+                    <li class='footer-two-item'>Member Privileges</li>
+                    <li class='footer-two-item'>Executive Membership Terms</li>
+                    <li class='footer-two-item'>Sign In or Register</li>
+                    <li class='footer-two-item'>Credit Card</li>
+                </ul>
+                <br>
+                <h4 class='footer-two-title'>Vendors & Suppliers</h4>
+                <ul class='footer-two-items'>
+                    <li class='footer-two-item'>Supply Chain Disclosure</li>
+                    <li class='footer-two-item'>Ethics Hotline for Suppliers</li>
+                    <li class='footer-two-item'>Supplier Diversity</li>
+                </ul>
+            </div>
+            <div class='footer-two-section'>
+                <h4 class='footer-two-title'>Customer Service</h4>
+                <ul class='footer-two-items'>
+                    <li class='footer-two-item'>Costco Shop Card Balance</li>
+                    <li class='footer-two-item'>Order By Item Number</li>
+                    <li class='footer-two-item'>Concierge Tech Support & Warranty</li>
+                    <li class='footer-two-item'>Export & Domestic Volume Sales</li>
+                    <li class='footer-two-item'>Order Status</li>
+                    <li class='footer-two-item'>Preventing Fraud</li>
+                    <li class='footer-two-item'>Shipping</li>
+                    <li class='footer-two-item'>Rebates</li>
+                    <li class='footer-two-item'>Recalls & Product Notices</li>
+                    <li class='footer-two-item'>Returns and Exchanges</li>
+                    <li class='footer-two-item'>Returns Policy</li>
+                    <li class='footer-two-item'>Accessibility </li>
+                </ul>
+            </div>
+            <div class='footer-two-section'>
+                <h4 class='footer-two-title'>Locations & Services</h4>
+                <ul class='footer-two-items'>
+                    <li class='footer-two-item'>Find a Warehouse</li>
+                    <li class='footer-two-item'>Locations Coming Soon</li>
+                    <li class='footer-two-item'>Hours and Holiday Closures</li>
+                    <li class='footer-two-item'>Gasoline</li>
+                    <li class='footer-two-item'>Hearing Aid Center</li>
+                    <li class='footer-two-item'>Optical</li>
+                    <li class='footer-two-item'>Special Events</li>
+                    <li class='footer-two-item'>CostcoGrocery</li>
+                    <li class='footer-two-item'>Grocery by Instacart</li>
+                </ul>
+            </div>
+        </section>
+    </section>
+
+    <!--Footer row two HIDDEN-->
+    <section class='footer-two-hidden'>
+        <section class='footer-two-container-hidden'>
+            <div class='footer-two-section-hidden'>
+                <div class='footer-two-title-hidden'>
+                    <p>About us</p>
+                </div>
+                <div class='footer-two-icon-hidden'>
+                    <ion-icon name="add-outline"></ion-icon>
+                </div>
+            </div>
+            <div class='footer-two-section-hidden'>
+                <div class='footer-two-title-hidden'>
+                    <p>Membership</p>
+                </div>
+                <div class='footer-two-icon-hidden'>
+                    <ion-icon name="add-outline"></ion-icon>
+                </div>
+            </div>
+            <div class='footer-two-section-hidden''>
+                <div class='footer-two-title-hidden'>
+                    <p>Vendors & Suppliers</p>
+                </div>
+                <div class='footer-two-icon-hidden'>
+                    <ion-icon name="add-outline"></ion-icon>
+                </div>
+            </div>
+            <div class='footer-two-section-hidden'>
+                <div class='footer-two-title-hidden'>
+                    <p>Customer Service</p>
+                </div>
+                <div class='footer-two-icon-hidden'>
+                    <ion-icon name="add-outline"></ion-icon>
+                </div>
+            </div>
+            <div class='footer-two-section-hidden'>
+                <div class='footer-two-title-hidden'>
+                    <p>Loctions & Services</p>
+                </div>
+                <div class='footer-two-icon-hidden'>
+                    <ion-icon name="add-outline"></ion-icon>
+                </div>
+            </div>
+            <div class='footer-two-section-hidden'>
+                <div class='footer-two-title-hidden'>
+                    <p>United States</p>
+                </div>
+                <div class='footer-two-icon-hidden'>
+                    <ion-icon name="add-outline"></ion-icon>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <!--Footer row three-->
+    <footer class='footer-three'>
+        <div class='footer-three-container'>
+            <ul class='footer-three-items'>
+                <li class='footer-three-item'>Site</li>
+                <li class='footer-three-item'>Map</li>
+                <li class='footer-three-item'Terms and Conditions</li>
+                <li class='footer-three-item'>Your Privacy Right</li>
+                <li class='footer-three-item'>CA Notice</li>
+                <li class='footer-three-item'>Cookie Settings</li>
+                <li class='footer-three-item'>Do Not Sell My Personal Information</li>
+                <li class='footer-three-item'>Feedback</li>
+            </ul>
+            <p class='footer-three-text'>© 1998 — 2021 Costco Wholesale Corporation. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
