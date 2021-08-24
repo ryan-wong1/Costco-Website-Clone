@@ -47,6 +47,114 @@ body {
     transition: .5s;
 }
 
+    /*'find a warehouse' dropdown*/
+.findWarehouse {
+    position: relative;
+}
+
+.findWarehouse-visible {
+    display:flex;
+    align-items: center;
+    padding-bottom: 2px;
+}
+
+.findWarehouse-hidden {
+    background-color: white;
+    border: 1px solid black;
+    position: absolute;
+    padding: 20px;
+    z-index:3;
+    right: -70px;
+    width: 350px;
+    margin-top: 1px;
+    display:none;
+}
+
+.findWarehouse-hidden h3 {
+    color:black;
+}
+
+.findwarehouse-area-title, .findWarehouse-items-title {
+    font-size: 12px;
+}
+
+.findWarehouse-items-title {
+    padding: 3px 0px 3px 0px;
+}
+
+.findWarehouse-area-input {
+    width: 100%;
+    padding: 5px;
+    margin: 10px 0px 10px 0px;
+}
+
+.findWarehouse-items-both {
+    display:flex;
+}
+
+.findWarehouse-items-part1 {
+    margin-right: 25px;
+}
+
+.findWarehouse-item {
+    display: flex;
+    align-items: center;
+    padding: 3px;
+}
+
+.findWarehouse-item ion-icon {
+    margin: 0px 6px 0px 6px;
+    font-size: 20px;
+}
+
+.findWarehouse-button button {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    background-color: rgb(16, 109, 170);
+    color:white;
+}
+
+    /*'US' dropdown menu (only activated by hover)*/
+.US-dropdown {
+    display:flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.US-dropdown-visible {
+    display:flex;
+    align-items: center;
+    padding-bottom: 1px;
+}
+
+.US-dropdown-selection {
+    position: absolute;
+    margin-top: 18px;
+    padding: 12px;
+    right: 0px;
+    background-color: white;
+    z-index: 3;
+    width: 250px;
+    border: 1px solid black;
+    display: none;
+}
+
+.US-title, .US-item {
+    list-style-type: none;
+    padding: 7px;
+    font-size: 18px;
+}
+
+.US-item:hover {
+    background-color:rgba(184, 207, 255, 0.5);
+    text-decoration: underline;
+}
+
+.US-title {
+    color:black;
+}
+
 /*nav LOGO, SEARCH BAR, SIGN IN, etc (second row)*/
 .nav-2ndRow-container {
     max-width: 1430px;
@@ -465,19 +573,19 @@ body {
     font-size: 12px;
 }
 
-.findWarehouse {
+.findAWarehouse {
     display:flex;
     width: 80%;
     border: 1px solid rgba(0, 0, 0, 0.5);
     background-color: white;
 }
 
-.findWarehouse input {
+.findAWarehouse input {
     width: 90%;
     border: none;
 }
 
-.findWarehouse ion-icon{
+.findAWarehouse ion-icon{
     font-size: 20px;
     color:rgb(16, 109, 170);
 }
@@ -614,34 +722,113 @@ body {
     padding-left: 10px;
 }
 
-/*Footer row two HIDDEN*/
-.footer-two-hidden {
-    display: none;
-    background-color:rgb(199, 199, 199);
-    font-size: 20px;
+/*Footer row two MOBILE*/
+.footer-two-mobile {
+    background-color: rgb(199, 199, 199);
+    display:none;
 }
 
-.footer-two-container-hidden {
+.footer-two-mobile-row {
     max-width: 600px;
-    margin: auto;
+    border-bottom: 1px solid rgba(112, 112, 112, 0.377);
     margin: 0px 10px 0px 10px;
 }
 
-.footer-two-section-hidden {
-    width: 100%;
+.footer-two-mobile-nonexpand {
     display:flex;
-    align-items: center;
-    border-bottom: 1px solid rgba(163, 163, 163, 0.493);
-    padding: 8px 8px 8px 10px;
+    padding: 10px 0px 10px 0px;
 }
 
-.footer-two-title-hidden {
-    width: 95%;
+.footer-two-mobile-title {
+    width: 50%;
+    font-size: 25px;
 }
 
-.footer-two-icon-hidden ion-icon{
-    color:rgb(16, 109, 170);
+.footer-two-mobile-icon {
+    width: 50%;
+    display:flex;
+    justify-content: flex-end;
     font-size: 35px;
+    color: rgb(16, 109, 170);
+}
+
+.plus-icon {
+
+}
+
+.minus-icon {
+
+}
+
+.plus-icon0 {
+    display:block;
+}
+.plus-icon1 {
+    display:block;
+}
+.plus-icon2 {
+    display:block;
+}
+.plus-icon3 {
+    display:block;
+}
+.plus-icon4 {
+    display:block;
+}
+.plus-icon5 {
+    display:block;
+}
+
+.minus-icon0 {
+    display:none;
+}
+.minus-icon1 {
+    display:none;
+}
+.minus-icon2 {
+    display:none;
+}
+.minus-icon3 {
+    display:none;
+}
+.minus-icon4 {
+    display:none;
+}
+.minus-icon5 {
+    display:none;
+}
+
+.footer-two-mobile-drop {
+    padding-bottom: 10px;
+}
+
+.footer-two-mobile-drop0 {
+    display:none;
+}
+.footer-two-mobile-drop1 {
+    display:none;
+}
+.footer-two-mobile-drop2 {
+    display:none;
+}
+.footer-two-mobile-drop3 {
+    display:none;
+}
+.footer-two-mobile-drop4 {
+    display:none;
+}
+.footer-two-mobile-drop5 {
+    display:none;
+}
+
+.footer-two-mobile-item {
+    padding: 5px 5px 5px 0px;
+    font-size: 15px;
+}
+
+.footer-two-mobile-item:hover {
+    text-decoration: underline;
+
 }
 
 /*Footer row three*/
