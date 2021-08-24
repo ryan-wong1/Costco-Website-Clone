@@ -45,10 +45,6 @@ const allIcons = document.querySelectorAll('.footer-two-mobile-nonexpand');
 
 const allDropdowns = document.querySelectorAll('.footer-two-mobile-drop');
 
-const pluses = document.querySelector('.plus-icon'); 
-
-const minuses = document.querySelector('.minus-icon');
-
 for (let i = 0; i<allIcons.length; i++) {
     allIcons[i].addEventListener('click', function() {
         const plus = document.querySelector(`.plus-icon${i}`);
