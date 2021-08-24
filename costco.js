@@ -62,7 +62,7 @@ for (let i = 0; i<allIcons.length; i++) {
             dropdown.style.display = 'block';
             let index = i;
             console.log(index);
-            //Allows only one dropdown menu to be opened at a time
+            //allows only one dropdown menu to be opened at a time
             for (let i = 0; i<allIcons.length; i++) {
                 if (i !== index) {
                     const plus = document.querySelector(`.plus-icon${i}`);
