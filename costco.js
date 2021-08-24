@@ -1,5 +1,4 @@
-// 'US' dropdown menu (only activated by hover);
-
+//'US' dropdown menu (only activated by hover);
 const dropdownUS = document.querySelector('.US-dropdown-visible');
 
 const dropdownUSHidden = document.querySelector('.US-dropdown-selection');
@@ -21,7 +20,6 @@ dropdownUS.addEventListener('mouseout', function() {
 })
 
 //'find a warehouse' dropdown
-
 const dropdownWarehouse = document.querySelector('.findWarehouse-visible');
 
 const dropdownWarehouseHidden = document.querySelector('.findWarehouse-hidden');
@@ -43,7 +41,6 @@ dropdownWarehouse.addEventListener('mouseout', function() {
 })
 
 //footer drop down MOBILE DISPLAY HIDDEN
-
 const allIcons = document.querySelectorAll('.footer-two-mobile-nonexpand');
 
 const allDropdowns = document.querySelectorAll('.footer-two-mobile-drop');
@@ -58,7 +55,8 @@ for (let i = 0; i<allIcons.length; i++) {
         const minus = document.querySelector(`.minus-icon${i}`);
         const dropdown = document.querySelector(`.footer-two-mobile-drop${i}`);
 
-        if (plus.style.display === 'block') { //if you click on a plus, symbol changes to minus and dropdown appears
+        //if you click on a plus, symbol changes to minus and dropdown appears
+        if (plus.style.display === 'block') { 
             plus.style.display = 'none';
             minus.style.display = 'block';
             dropdown.style.display = 'block';
@@ -74,11 +72,11 @@ for (let i = 0; i<allIcons.length; i++) {
                     minus.style.display = 'none';
                 }
             }
-        } else { //if you click on a minus, symbol changes to plus and dropdown dissapears
+        //if you click on a minus, symbol changes to plus and dropdown dissapears
+        } else { 
             plus.style.display = 'block';
             minus.style.display = 'none';
             dropdown.style.display = 'none';
         }
-
 })
 }
