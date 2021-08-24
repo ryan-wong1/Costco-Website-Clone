@@ -18,19 +18,93 @@
     </div>
 
 <!--nav bar (while supplies last, first row)-->
-    <div class='nav1-container'>
+    <nav class='nav1-container'>
         <ul class='nav1-items'>
             <li class='nav1-item'>While Supplies Last</li>
             <li class='nav1-item'>Treasure Hunt</li>
             <li class='nav1-item'>What's New</li>
             <li class='nav1-item'>Online-Only</li>
             <li class='nav1-item'>Warehouse Savings</li>
-            <li class='nav1-item'>Find a Warehouse</li>
+
+            <!--'find a warehouse' dropdown-->
+            <div class='findWarehouse'>
+                <div class='findWarehouse-visible'>
+                    <li class='findWarehouse-text'>Find a Warehouse</li>  
+                    <ion-icon class='nav1-item' name="chevron-down-outline"></ion-icon>  
+                </div>  
+                <div class='findWarehouse-hidden'>
+                    <div class='findWarehouse-area'>
+                        <h3 class='findWarehouse-area-title'>City, State, or Zip</h3>    
+                        <input type="text" class='findWarehouse-area-input'>
+                    </div>
+                    <div class='findWarehouse-items'>
+                        <h3 class='findWarehouse-items-title'>Show Warehouses with:</h3>
+                        <div class='findWarehouse-items-both'>
+                            <div class='findWarehouse-items-part1'>
+                                <div class='findWarehouse-item'>
+                                    <input type='checkbox'><ion-icon name="speedometer"></ion-icon>Gas Station
+                                </div>
+                                <div class='findWarehouse-item'>
+                                    <input type='checkbox'><ion-icon name="car"></ion-icon>Tire Center
+                                </div>
+                                <div class='findWarehouse-item'>
+                                    <input type='checkbox'><ion-icon name="fast-food"></ion-icon>Food Court
+                                </div>
+                                <div class='findWarehouse-item'>
+                                    <input type='checkbox'><ion-icon name="ear"></ion-icon>Hearing Aids
+                                </div>
+                            </div>
+                            <div class='findWarehouse-items-part2'>
+                                <div class='findWarehouse-item'>
+                                    <input type='checkbox'><ion-icon name="glasses"></ion-icon>Optical
+                                </div>
+                                <div class='findWarehouse-item'>
+                                    <input type='checkbox'><ion-icon name="medkit"></ion-icon>Pharmacy
+                                </div>
+                                <div class='findWarehouse-item'>
+                                    <input type='checkbox'><ion-icon name="card"></ion-icon>Business Center
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='findWarehouse-button'>
+                        <button>Find a Warehouse</button>
+                    </div>
+                </div>          
+            </div>
+
             <li class='nav1-item'>Get Email Offers</li>
             <li class='nav1-item'>Customer Service</li>
-            <li class='nav1-item'>US</li>
+            <div class='US-dropdown'>      
+                <div class='US-dropdown-visible'>
+                    <li class='nav1-item-US'>US</li>
+                    <ion-icon name="chevron-down-outline"></ion-icon>
+                </div>  
+
+                <!--'US' dropdown menu (only activated by hover)-->
+                <div class='US-dropdown-selection'>
+                    <ul class='US-items'>
+                        <li class='US-title'>Select country/region:</li>
+                        <li class='US-item'>United States</li>
+                        <li class='US-item'>Canada</li>
+                        <li class='US-item'>United Kingdom</li>
+                        <li class='US-item'>Mexico</li>
+                        <li class='US-item'>South Korea</li>
+                        <li class='US-item'>Taiwan</li>
+                        <li class='US-item'>Japan</li>
+                        <li class='US-item'>Australia</li>
+                        <li class='US-item'>Iceland</li>
+                        <li class='US-item'>France</li>
+                        <li class='US-item'>Spain</li>
+                        <li class='US-item'>New Zealand</li>
+                    </ul>
+                </div>
+            </div>
         </ul>
-    </div>
+    </nav>
+
+<!--'US' dropdown menu (only activated by hover)-->
+    
 
 <!--nav LOGO, SEARCH BAR, SIGN IN, etc (second row)-->
     <div class='nav-2ndRow-container'>
@@ -84,7 +158,7 @@
     </div>
 
 <!--Navbar blue, shop all departments...-->
-    <div class='navbar-blue-container'>
+    <nav class='navbar-blue-container'>
         <ul class='navbar-blue-items'>
             <div class='navbar-blue-dropdown'>
                 <ion-icon name="reorder-three-outline"></ion-icon>
@@ -100,7 +174,7 @@
             <li class='navbar-blue-item'>Membership</li>
             <li class='navbar-blue-item'>Locations</li>
         </ul>
-    </div>
+    </nav>
 
 <!--Welcome to the costco employee website-->
     <section class='welcome-container'> 
@@ -205,7 +279,7 @@
 <!--FOOTER-->
 
     <!--Footer row one-->
-    <section class='footer-one'>
+    <footer class='footer-one'>
         <div class='footer-one-container'>
             <div class='footer-one-section footer-one-1'>
                 <h4 class='footer-one-title'>Customer Service</h4>
@@ -216,7 +290,7 @@
             </div>
             <div class='footer-one-section footer-one-2'>
                 <h4 class='footer-one-title'>Find a Warehouse</h4>
-                <div class='findWarehouse'>
+                <div class='findAWarehouse'>
                     <input type='text' placeholder='Enter your email'>
                     <ion-icon name="search-outline"></ion-icon>
                 </div>
@@ -241,10 +315,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <!-- Footer row one HIDDEN-->
-    <section class='footer-one-hidden'>
+    <footer class='footer-one-hidden'>
         <div class='footer-one-container-hidden'>
             <h4 class='footer-one-title-hidden'>Get Email Offers</h4>
             <div class='footer-one-input-hidden'>
@@ -256,10 +330,10 @@
                 </div>
             </div>
         </div>
-    </section>
+    </footer>
 
     <!--Footer row two-->
-    <section class='footer-two'>
+    <footer class='footer-two'>
         <section class='footer-two-container'>
             <div class='footer-two-section footer-two-section1'>
                 <h4 class='footer-two-title'>About Us</h4>
@@ -327,61 +401,163 @@
                 </ul>
             </div>
         </section>
-    </section>
+    </footer>
 
-    <!--Footer row two HIDDEN-->
-    <section class='footer-two-hidden'>
-        <section class='footer-two-container-hidden'>
-            <div class='footer-two-section-hidden'>
-                <div class='footer-two-title-hidden'>
+    <!--Footer row two MOBILE-->
+    <footer class='footer-two-mobile'>
+        <!--About us-->
+        <section class='footer-two-mobile-row'>
+            <div class='footer-two-mobile-nonexpand'>
+                <div class='footer-two-mobile-title'>
                     <p>About us</p>
                 </div>
-                <div class='footer-two-icon-hidden'>
-                    <ion-icon name="add-outline"></ion-icon>
+                <div class='footer-two-mobile-icon'>
+                    <ion-icon class='plus-icon plus-icon0' name="add-outline"></ion-icon>
+                    <ion-icon class='minus-icon minus-icon0' name="remove-outline"></ion-icon>
                 </div>
             </div>
-            <div class='footer-two-section-hidden'>
-                <div class='footer-two-title-hidden'>
-                    <p>Membership</p>
-                </div>
-                <div class='footer-two-icon-hidden'>
-                    <ion-icon name="add-outline"></ion-icon>
-                </div>
-            </div>
-            <div class='footer-two-section-hidden''>
-                <div class='footer-two-title-hidden'>
-                    <p>Vendors & Suppliers</p>
-                </div>
-                <div class='footer-two-icon-hidden'>
-                    <ion-icon name="add-outline"></ion-icon>
-                </div>
-            </div>
-            <div class='footer-two-section-hidden'>
-                <div class='footer-two-title-hidden'>
-                    <p>Customer Service</p>
-                </div>
-                <div class='footer-two-icon-hidden'>
-                    <ion-icon name="add-outline"></ion-icon>
-                </div>
-            </div>
-            <div class='footer-two-section-hidden'>
-                <div class='footer-two-title-hidden'>
-                    <p>Loctions & Services</p>
-                </div>
-                <div class='footer-two-icon-hidden'>
-                    <ion-icon name="add-outline"></ion-icon>
-                </div>
-            </div>
-            <div class='footer-two-section-hidden'>
-                <div class='footer-two-title-hidden'>
-                    <p>United States</p>
-                </div>
-                <div class='footer-two-icon-hidden'>
-                    <ion-icon name="add-outline"></ion-icon>
-                </div>
+            <div class='footer-two-mobile-drop footer-two-mobile-drop0'>
+                <ul class='footer-two-mobile-items'>
+                    <li class='footer-two-mobile-item'>Get To Know Costco</li>
+                    <li class='footer-two-mobile-item'>Charitable Contributions</li>
+                    <li class='footer-two-mobile-item'>Company Information</li>
+                    <li class='footer-two-mobile-item'>Sustainability Commitment</li>
+                    <li class='footer-two-mobile-item'>Investor Relations</li>
+                    <li class='footer-two-mobile-item'>Jobs</li>
+                    <li class='footer-two-mobile-item'>Kirkland Signature</li>
+                    <li class='footer-two-mobile-item'>Logo and Media Requests</li>
+                    <li class='footer-two-mobile-item'>Product Videos</li>
+                    <li class='footer-two-mobile-item'>The Costco Connection</li>
+                    <li class='footer-two-mobile-item'>Quick & Easy Recipe Videos</li>
+                    <li class='footer-two-mobile-item'>Costco Blog</li>
+                    <li class='footer-two-mobile-item'>Employee Site</li>
+                </ul>
             </div>
         </section>
-    </section>
+        <!--Membership-->
+        <section class='footer-two-mobile-row'>
+            <div class='footer-two-mobile-nonexpand'>
+                <div class='footer-two-mobile-title'>
+                    <p>Membership</p>
+                </div>
+                <div class='footer-two-mobile-icon'>
+                    <ion-icon class='plus-icon plus-icon1' name="add-outline"></ion-icon>
+                    <ion-icon class='minus-icon minus-icon1' name="remove-outline"></ion-icon>
+                </div>
+            </div>
+            <div class='footer-two-mobile-drop footer-two-mobile-drop1'>
+                <ul class='footer-two-mobile-items'>
+                    <li class='footer-two-mobile-item'>Join Now</li>
+                    <li class='footer-two-mobile-item'>Membership privileges</li>
+                    <li class='footer-two-mobile-item'>Executive Membership Terms</li>
+                    <li class='footer-two-mobile-item'>Sign In or Register</li>
+                    <li class='footer-two-mobile-item'>Credit Card</li>
+                </ul>
+            </div>
+        </section>
+        <!--Vendors & Suppliers-->
+        <section class='footer-two-mobile-row'>
+            <div class='footer-two-mobile-nonexpand'>
+                <div class='footer-two-mobile-title'>
+                    <p>Vendors & Suppliers</p>
+                </div>
+                <div class='footer-two-mobile-icon'>
+                    <ion-icon class='plus-icon plus-icon2' name="add-outline"></ion-icon>
+                    <ion-icon class='minus-icon minus-icon2' name="remove-outline"></ion-icon>
+                </div>
+            </div>
+            <div class='footer-two-mobile-drop footer-two-mobile-drop2'>
+                <ul class='footer-two-mobile-items'>
+                    <li class='footer-two-mobile-item'>Vendor Inquiries</li>
+                    <li class='footer-two-mobile-item'>Supply Chain Disclosure</li>
+                    <li class='footer-two-mobile-item'>Ethics Hotline for Suppliers</li>
+                    <li class='footer-two-mobile-item'>Suppliers Diversity</li>
+                </ul>
+            </div>
+        </section>
+        <!--Customer Service-->
+        <section class='footer-two-mobile-row'>
+            <div class='footer-two-mobile-nonexpand'>
+                <div class='footer-two-mobile-title'>
+                    <p>Customer Service</p>
+                </div>
+                <div class='footer-two-mobile-icon'>
+                    <ion-icon class='plus-icon plus-icon3' name="add-outline"></ion-icon>
+                    <ion-icon class='minus-icon minus-icon3' name="remove-outline"></ion-icon>
+                </div>
+            </div>
+            <div class='footer-two-mobile-drop footer-two-mobile-drop3'>
+                <ul class='footer-two-mobile-items'>
+                    <li class='footer-two-mobile-item'>Costco Customer Service</li>
+                    <li class='footer-two-mobile-item'>Costco Shop Card Balance</li>
+                    <li class='footer-two-mobile-item'>Order By Item Number</li>
+                    <li class='footer-two-mobile-item'>Concierge Tech Support & Warranty</li>
+                    <li class='footer-two-mobile-item'>Export & Domestic Volume Sales</li>
+                    <li class='footer-two-mobile-item'>Order Status</li>
+                    <li class='footer-two-mobile-item'>Preventing Fraud</li>
+                    <li class='footer-two-mobile-item'>Shipping</li>
+                    <li class='footer-two-mobile-item'>Rebates</li>
+                    <li class='footer-two-mobile-item'>Recalls & Product Notices</li>
+                    <li class='footer-two-mobile-item'>Returns and Exchanges</li>
+                    <li class='footer-two-mobile-item'>Returns Policy</li>
+                    <li class='footer-two-mobile-item'>Accessibility</li>
+                </ul>
+            </div>
+        </section>
+        <!--Locations & service-->
+        <section class='footer-two-mobile-row'>
+            <div class='footer-two-mobile-nonexpand'>
+                <div class='footer-two-mobile-title'>
+                    <p>Location & Services</p>
+                </div>
+                <div class='footer-two-mobile-icon'>
+                    <ion-icon class='plus-icon plus-icon4' name="add-outline"></ion-icon>
+                    <ion-icon class='minus-icon minus-icon4' name="remove-outline"></ion-icon>
+                </div>
+            </div>
+            <div class='footer-two-mobile-drop footer-two-mobile-drop4'>
+                <ul class='footer-two-mobile-items'>
+                    <li class='footer-two-mobile-item'>Find a Warehouse</li>
+                    <li class='footer-two-mobile-item'>Locations Coming Soon</li>
+                    <li class='footer-two-mobile-item'>Hours and Holiday Closures</li>
+                    <li class='footer-two-mobile-item'>Gasoline</li>
+                    <li class='footer-two-mobile-item'>Hearing Aid Center</li>
+                    <li class='footer-two-mobile-item'>Optical</li>
+                    <li class='footer-two-mobile-item'>Special Events</li>
+                    <li class='footer-two-mobile-item'>CostcoGrocery</li>
+                    <li class='footer-two-mobile-item'>Grocery by Instacart</li>
+                </ul>
+            </div>
+        </section>
+        <section class='footer-two-mobile-row'>
+            <div class='footer-two-mobile-nonexpand'>
+                <div class='footer-two-mobile-title'>
+                    <p>United States</p>
+                </div>
+                <div class='footer-two-mobile-icon'>
+                    <ion-icon class='plus-icon plus-icon5' name="add-outline"></ion-icon>
+                    <ion-icon class='minus-icon minus-icon5' name="remove-outline"></ion-icon>
+                </div>
+            </div>
+            <div class='footer-two-mobile-drop footer-two-mobile-drop5'>
+                <ul class='footer-two-mobile-items'>
+                    <li class='footer-two-mobile-item'>United States</li>
+                    <li class='footer-two-mobile-item'>Canada</li>
+                    <li class='footer-two-mobile-item'>United Kingdom</li>
+                    <li class='footer-two-mobile-item'>Mexico</li>
+                    <li class='footer-two-mobile-item'>South Korea</li>
+                    <li class='footer-two-mobile-item'>Taiwan</li>
+                    <li class='footer-two-mobile-item'>Japan</li>
+                    <li class='footer-two-mobile-item'>Australia</li>
+                    <li class='footer-two-mobile-item'>Iceland</li>
+                    <li class='footer-two-mobile-item'>France</li>
+                    <li class='footer-two-mobile-item'>Spain</li>
+                    <li class='footer-two-mobile-item'>New Zealand</li>
+                </ul>
+            </div>
+        </section>
+
+    </footer>
 
     <!--Footer row three-->
     <footer class='footer-three'>
@@ -399,6 +575,6 @@
             <p class='footer-three-text'>© 1998 — 2021 Costco Wholesale Corporation. All rights reserved.</p>
         </div>
     </footer>
-
+    <script src='costco.js'></script>
 </body>
 </html>
