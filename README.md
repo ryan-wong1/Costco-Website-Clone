@@ -1,4 +1,4 @@
-This project is a clone/replica of https://www.costco.com/employee-website.html and was created using HTML and CSS. No JavaScript (yet).
+This project is a clone/replica of https://www.costco.com/employee-website.html and was created using HTML, CSS, and JavaScript.
 
 Site is fully responsive. Will jump to mobile display at 600px using media queries. For source code for responsive display, please look at 'media_costco.css'.
 
