@@ -92,12 +92,12 @@
     display: block;
 }
 
-/*Footer row two HIDDEN*/
+/*Footer row two MOBILE*/
 .footer-two {
     display:none;
 }
 
-.footer-two-hidden {
+.footer-two-mobile {
     display:block;
 }
 
@@ -117,5 +117,5 @@
 .footer-three-text {
     font-size: 12px;
 }
-    
+
 }
